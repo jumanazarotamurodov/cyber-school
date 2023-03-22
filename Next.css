@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: black; */
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgb(50, 50, 50); */
+
+}
+.container{
+    box-shadow: 0 0 50px 2px black;
+    width: 1600px;
+    height: 6807px;
+    position: relative;
+    background-color: #111317;
+    overflow: hidden;
+}
+.box1{
+    background: url(./Untitled.png);
+    background-size: 100px;
+    /* filter: blur(2px); */
+    width: 100%;
+    height: 900px;
+    /* background-color: white; */
+    /* opacity: 0.05; */
+    /* box-shadow: 0px 0 0px 100px red; */
+    backdrop-filter: blur(50px);
+    position: absolute;
+    z-index: 50;
+}
+.fon{
+    width: 100%;
+    height: 100%;
+    z-index: 8 !important;
+    /* background-color: red; */
+    backdrop-filter: blur(20px);
+    position: absolute;
+
+}
+.fon::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: 8 !important;
+    background-color: #131010;
+    opacity: 0.3;
+    backdrop-filter: blur(50px);
+    position: absolute;
+
+}
+.fon1{
+    top: -200px;
+    right: -200px;
+    width: 800px;
+    filter: blur(30px);
+    position: absolute;
+    animation: animateone 30s linear infinite;
+    border-radius: 50px;
+    height: 800px;
+    background: linear-gradient(45deg,red , rgb(255, 0, 149) , rgb(55, 0, 128));
+}
+@keyframes animateone{
+    0%{
+        transform: rotateZ(360deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotateZ(-360deg);
+        border-radius: 50px;
+    }
+}
+.fon2{
+    top: 800px;
+    left: -200px;
+    width: 900px;
+    filter: blur(30px);
+    position: absolute;
+    animation: animatetwo 30s linear infinite;
+    border-radius: 50px;
+    height: 700px;
+    background: linear-gradient(45deg,rgb(255, 0, 170) , rgb(0, 60, 255) , rgb(55, 0, 128));
+}
+@keyframes animatetwo{
+    0%{
+        transform: rotateZ(-360deg);
+    }
+    50%{
+        transform: rotateZ(0deg);
+        border-radius: 50%;
+    }
+    100%{
+        transform: rotateZ(360deg);
+        border-radius: 50px;
+    }
+}
+.fon3{
+    background: linear-gradient(20deg , red , blue , purple);
+    width: 700px;
+    filter: blur(30px);
+    height:700px;
+    position: absolute;
+    right: -200px;
+    top: 1500px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morph 3s linear infinite;
+  }
+  
+  
+  @keyframes morph{
+    0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+  .fon4{
+    background: linear-gradient(20deg , rgb(0, 4, 255) , rgb(255, 0, 212) , purple);
+    width: 700px;
+    filter: blur(30px);
+    height:1000px;
+    position: absolute;
+    left: -200px;
+    top: 2000px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    overflow: hidden;
+    animation: morphtwo 3s linear infinite;
+  }
+  
+  
+  @keyframes morphtwo{
+    0%, 100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    34% {
+      border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+  }
+.menu1{
+    z-index: 10000000000000;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+.menu1::before{
+    content: '';
+    z-index: 100000;
+    /* overflow: hidden; */
+    background-color: #000000b2;
+    /* opacity: 0.7; */
+    position: fixed;
+    top: 0;
+    width: 1600px;
+    height: 80px;
+}
+.logo{
+    position: absolute;
+width: 72px;
+height: 50px;
+left: 120px;
+top: 15px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 50px;
+/* identical to box height, or 167% */
+z-index: 200000;
+
+color: #FFF;
+
+}
+.menu2{
+    position: absolute;
+width: 114px;
+height: 24px;
+left: 344px;
+top: 27px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+z-index: 10000000;
+color: #FFFFFF;
+}
+.menu3{
+    position: absolute;
+width: 114px;
+height: 24px;
+left: 474px;
+top: 27px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+z-index: 10000000;
+color: #FFFFFF;
+}
+.menu4{
+    position: absolute;
+width: 114px;
+height: 24px;
+left: 584px;
+top: 27px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+z-index: 10000000;
+color: #FFFFFF;
+}
+.menu5{
+    position: absolute;
+width: 114px;
+height: 24px;
+left: 685px;
+top: 27px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+z-index: 10000000;
+color: #FFFFFF;
+}
+.lite_dark{
+    width: 93px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff;
+    position: absolute;
+    left: 978px;
+    top: 20px;
+    border-radius: 40px;
+    z-index: 100000000;
+
+}
+.dark{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 1px;
+    top: 1px;
+    /* background: #5454D4; */
+    border-radius: 40px;
+}
+.click{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: 1px;
+    top: 1px;
+    background: #5454D4;
+    border-radius: 40px;
+    animation: click 0.5s linear;
+}
+@keyframes click{
+    0%{
+        right: 25px;
+    }
+    100%{
+        right: 1px;
+    }
+}
+.dark>img{
+    /* background-color: red; */
+    z-index: 200000000;
+    position: absolute;
+    width: 34px;
+    top: 1px;
+    left: 1px;
+    /* margin-top: -400px; */
+}
+.lite>img{
+    /* background-color: red; */
+    z-index: 200000000;
+    position: absolute;
+    width: 34px;
+    top: 2px;
+    left: 2px;
+    /* margin-top: -400px; */
+}
+.nomer{
+    position: absolute;
+width: 180px;
+z-index: 10000777;
+height: 24px;
+left: 1111px;
+top: 17px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+}
+.nomer + p{
+    position: absolute;
+width: 136px;
+height: 17px;
+left: 1111px;
+top: 44px;
+
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+z-index: 100000000000;
+}
+.click2{
+    position: absolute;
+width: 168px;
+height: 45px;
+left: 1312px;
+top: 17px;
+z-index: 100000;
+background: #6911AD;
+border-radius: 7px;
+}
+.click2 > p{
+    margin-top: 12px;
+    margin-left: 22px;
+    color: #FFF;
+    font-size: 17px;
+}
+.h1{
+    margin-top: 300px;
+    color: #fff;
+    font-family: 'Proxima Nova';
+    font-size: 48px;
+    width: 700px;
+    margin-left: 150px;
+    font-style: normal;
+}
+.h2{
+    margin-top: 30px;
+    color: #fff;
+    font-family: 'Proxima Nova';
+    font-size: 15px;
+    width: 500px;
+    margin-left: 150px;
+    font-style: normal;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 1000px;
+    margin-top: -300px;
+}
+.h3{
+    width: 500px;
+    color: #fff;
+    margin-top: 1000px;
+    margin-left: 150px;
+    position: absolute;
+    z-index: 50;
+    font-size: 48px;
+}
+.h4{
+    width: 500px;
+    margin-top: 1100px;
+    margin-left: 150px;
+    color: #fff;
+    z-index:60;
+    position: absolute;
+    text-align: justify;
+}
+.h13{
+    width: 500px;
+    margin-top: 1250px;
+    margin-left: 150px;
+    color: #fff;
+    z-index:60;
+    position: absolute;
+    text-align: justify;
+}
+.h5{
+    width: 200px;
+    position: absolute;
+left: 59.81%;
+right: 34.88%;
+top: 16.23%;
+bottom: 83.03%;
+position: absolute;
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 100%;
+/* identical to box height, or 50px */
+z-index: 60;
+background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+.h6{
+    margin-left: 900px;
+    position: absolute;
+    z-index: 600000000;
+    margin-top: 1170px;
+    color: #fff;
+    font-size: 20px;
+}
+.h7{
+    position: absolute;
+left: 76.62%;
+right: 14.12%;
+top: 16.23%;
+bottom: 83.03%;
+position: absolute;
+font-family: 'Futura PT';
+font-style: normal;
+width: 200px;
+font-weight: 600;
+font-size: 50px;
+line-height: 100%;
+/* identical to box height, or 50px */
+z-index: 2000000;
+background: linear-gradient(96.96deg, rgba(0, 40, 248, 0.89) -0.76%, #6911AD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+.h8{
+    /* Опыта разработки */
+
+
+position: absolute;
+left: 72.81%;
+right: 10.31%;
+top: 17.14%;
+bottom: 82.47%;
+
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+z-index:200000;
+text-align: center;
+
+color: #FFFFFF;
+}
+.h9{
+    width: 200px;
+position: absolute;
+left: 60.06%;
+right: 35.06%;
+top: 18.11%;
+bottom: 81.15%;
+
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 100%;
+/* identical to box height, or 50px */
+
+
+background: linear-gradient(112.34deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+z-index: 100;
+
+}
+.h10{
+    margin-left: 910px;
+    position: absolute;
+    z-index: 600000000;
+    margin-top: 1300px;
+    color: #fff;
+    font-size: 20px;
+}
+.h11{
+    position: absolute;
+left: 76.62%;
+right: 14.12%;
+top: 18.11%;
+bottom: 81.15%;
+
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+line-height: 100%;
+/* identical to box height, or 50px */
+
+
+background: linear-gradient(96.51deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+z-index: 200000;
+width: 200px;
+}
+.h12{
+position: absolute;
+left: 72.81%;
+right: 10.31%;
+top: 17.14%;
+bottom: 82.47%;
+margin-top: 130px;
+font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+/* identical to box height */
+z-index:200000;
+text-align: center;
+
+color: #FFFFFF;
+}
+.h14{
+    margin-top: 1500px;
+    margin-left: 40%;
+    color: #fff;
+    z-index: 100000000;
+    position: absolute;
+}
+.box2{
+    width: 1600px;
+    height: 520px;
+    /* background-color: #fff; */
+    margin-top: 1600px;
+    position: absolute;
+    z-index: 10000000;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+.box_3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+.box_3::before{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    content: '';
+    border: 2px solid white;
+}
+.circle2{
+    width: 50px;
+    height: 50px;
+    /* right: -100p; */
+    position: absolute;
+    margin-left: 100px;
+    background-color: purple;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.circle2:hover{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.circle2:hover > p{
+    margin-left: 0;
+    margin-top: 0;   
+}
+.circle2 > p{
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: 10s;
+    color:white;
+}
+.circle2 + p{
+    margin-left: 116px;
+    margin-top: 20px;
+    color: #6911AD;
+}
